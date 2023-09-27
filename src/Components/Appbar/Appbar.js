@@ -10,11 +10,8 @@ const Appbar = () => {
     };
 
     return (
-        <Box sx={{ flexGrow: 1 }}>
-            <AppBar
-                position="static"
-                style={{ backgroundColor: "transparent" }}
-            >
+        <Box>
+            <AppBar position="static" style={{ backgroundColor: "white" }}>
                 <Toolbar sx={{ justifyContent: "space-between" }}>
                     <Link to={"/"}>
                         <Button variant="text">

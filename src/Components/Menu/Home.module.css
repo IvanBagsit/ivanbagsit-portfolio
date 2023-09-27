@@ -1,0 +1,28 @@
+.background {
+    background-color: #ecf1f7;
+    flex-grow: 1;
+}
+
+.profilePicture{
+    width: 40vh;
+    height: 40vh;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 5%;
+}
+
+.name,
+.description {
+    margin-right: 5%;
+}
+
+.name {
+    font-family: 'Blooming Elegant Sans Bold';
+    font-weight: bolder;
+    font-size: 60px;
+    margin-bottom: 1%;
+}
+
+.description {
+    margin-top: 1%;
+}
