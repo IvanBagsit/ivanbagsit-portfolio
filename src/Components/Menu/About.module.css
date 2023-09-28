@@ -1,0 +1,85 @@
+.background {
+    background-color: #ecf1f7;
+    flex-grow: 1;
+}
+
+.profilePicture{
+    width: auto;
+    height: 60vh;
+    border-radius: 20%;
+    object-fit: cover;
+    animation: bottom-to-top 0.8s ease-in-out;
+}
+
+.question,
+.informations,
+.contact,
+.contactIconsGroup {
+    padding-left: 5%;
+    animation: top-to-bottom 0.8s ease-in-out;
+}
+
+.question {
+    font-family: 'Blooming Elegant Sans Bold';
+    font-weight: bolder;
+    font-size: 50px;
+    padding-bottom: 1%;
+}
+
+.informations {
+    width: 80vh;
+}
+
+.contact {
+    padding-top: 3%;
+}
+
+.contactIcons:hover {
+    height: 10vh;
+    width: auto;
+}
+
+.experience {
+    font-family: 'Blooming Elegant Sans Bold';
+    font-weight: bolder;
+    font-size: 50px;
+    padding: 10% 0 3% 0;
+    text-align: center;
+}
+
+.company {
+    width: 50vh;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 10%;
+    object-fit: cover;
+    animation: bottom-to-top 0.8s ease-in-out;
+}
+
+.workTitle,
+.workDescription {
+    padding-right: 5%;
+}
+
+.experience,
+.workTitle,
+.workDescription {
+    animation: top-to-bottom 0.8s ease-in-out;
+}
+
+.workDescription {
+    padding-top: 3%;
+    width: 80vh;
+}
+
+@keyframes bottom-to-top {
+    0% {
+        transform: translateY(70%);
+    }
+}
+
+@keyframes top-to-bottom {
+    0% {
+        transform: translateY(-100%);
+    }
+}
