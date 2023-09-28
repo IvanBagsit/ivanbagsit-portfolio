@@ -32,7 +32,7 @@ const Appbar = () => {
                                 style={{ borderRightColor: "#7c7775" }}
                                 sx={buttonGroupStyle}
                             >
-                                About
+                                About Me
                             </Button>
                         </Link>
                         <Link to={"/portfolio"}>
@@ -42,9 +42,6 @@ const Appbar = () => {
                             >
                                 Portfolio
                             </Button>
-                        </Link>
-                        <Link to={"/contact"}>
-                            <Button sx={buttonGroupStyle}>Contact</Button>
                         </Link>
                     </ButtonGroup>
                 </Toolbar>

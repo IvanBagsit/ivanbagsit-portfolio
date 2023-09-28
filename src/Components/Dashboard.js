@@ -4,7 +4,6 @@ import styles from "./Dashboard.module.css";
 import Home from "./Menu/Home";
 import About from "./Menu/About";
 import Portfolio from "./Menu/Portfolio";
-import Contact from "./Menu/Contact";
 
 const Dashboard = () => {
     return (
@@ -15,7 +14,6 @@ const Dashboard = () => {
                 <Route path="/home" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/portfolio" element={<Portfolio />} />
-                <Route path="/contact" element={<Contact />} />
             </Routes>
         </div>
     );

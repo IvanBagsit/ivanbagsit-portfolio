@@ -11,6 +11,27 @@
     margin-left: 5%;
 }
 
+.messages {
+    animation: left-to-right 1s ease-in-out;
+}
+
+.profile {
+    animation: bottom-to-top 1s ease-in-out;
+}
+
+@keyframes left-to-right {
+    0% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes bottom-to-top {
+    0% {
+        transform: translateY(-200%)
+    }
+}
+
+
 .name,
 .description {
     margin-right: 5%;
@@ -25,4 +46,9 @@
 
 .description {
     margin-top: 1%;
+}
+
+.technologies:hover {
+    height: 10vh;
+    width: auto;
 }
