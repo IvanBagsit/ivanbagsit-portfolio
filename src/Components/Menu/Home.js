@@ -33,8 +33,8 @@ const Home = () => {
                     Hi, I'm Ivan
                 </Grid>
                 <Grid item className={styles.description}>
-                    I'm a full stack web developer having an experience in the
-                    following:
+                    I'm a full stack web developer with experiences in the
+                    following tech stack:
                 </Grid>
                 <Grid item className={styles.description}>
                     <Tooltip title={"React"} arrow>

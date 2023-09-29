@@ -86,11 +86,11 @@ const About = () => {
                     <Grid item className={styles.informations}>
                         <b>Ivan Bagsit</b> is a graduate of BS Mechatronics
                         Engineering, who became fond about programming since he
-                        was little due to TV series 'BattleBots'. he started
+                        was little due to TV series 'BattleBots'. He started
                         coding during his college days that focuses primarily in
                         robots that uses arduino with language of C/C++. Now, he
-                        expanded his passion to web development from which he
-                        can showcase his skills and learn more about
+                        is expanding his passion to web development from which
+                        he can showcase his skills and learn more about
                         programming.
                     </Grid>
                     <Grid item className={styles.contact}>
