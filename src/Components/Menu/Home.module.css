@@ -16,7 +16,7 @@
 }
 
 .profile {
-    animation: bottom-to-top 1s ease-in-out;
+    animation: top-to-bottom 1s ease-in-out;
 }
 
 @keyframes left-to-right {
@@ -25,7 +25,7 @@
     }
 }
 
-@keyframes bottom-to-top {
+@keyframes top-to-bottom {
     0% {
         transform: translateY(-200%)
     }

@@ -97,20 +97,19 @@ const About = () => {
                         <b>Contact Me:</b>
                     </Grid>
                     <Grid item className={styles.contactIconsGroup}>
-                        {contactDetails.map((items) => {
+                        {contactDetails.map((items, index) => {
                             return (
-                                <Tooltip
-                                    arrow
-                                    title={items.name}
-                                    onClick={() =>
-                                        window.open(items.link, "_blank")
-                                    }
-                                >
-                                    <img
-                                        src={items.icon}
-                                        alt={items.name}
-                                        className={styles.contactIcons}
-                                    />
+                                <Tooltip arrow title={items.name}>
+                                    <a href={items.link} target="_blank">
+                                        <img
+                                            src={items.icon}
+                                            alt={items.name}
+                                            className={styles.contactIcons}
+                                            style={{
+                                                animationDelay: `${index / 4}s`,
+                                            }}
+                                        />
+                                    </a>
                                 </Tooltip>
                             );
                         })}
