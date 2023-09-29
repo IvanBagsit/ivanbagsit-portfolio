@@ -86,31 +86,30 @@ const About = () => {
                     <Grid item className={styles.informations}>
                         <b>Ivan Bagsit</b> is a graduate of BS Mechatronics
                         Engineering, who became fond about programming since he
-                        was little due to TV series 'BattleBots'. he started
+                        was little due to TV series 'BattleBots'. He started
                         coding during his college days that focuses primarily in
                         robots that uses arduino with language of C/C++. Now, he
-                        expanded his passion to web development from which he
-                        can showcase his skills and learn more about
+                        is expanding his passion to web development from which
+                        he can showcase his skills and learn more about
                         programming.
                     </Grid>
                     <Grid item className={styles.contact}>
                         <b>Contact Me:</b>
                     </Grid>
                     <Grid item className={styles.contactIconsGroup}>
-                        {contactDetails.map((items) => {
+                        {contactDetails.map((items, index) => {
                             return (
-                                <Tooltip
-                                    arrow
-                                    title={items.name}
-                                    onClick={() =>
-                                        window.open(items.link, "_blank")
-                                    }
-                                >
-                                    <img
-                                        src={items.icon}
-                                        alt={items.name}
-                                        className={styles.contactIcons}
-                                    />
+                                <Tooltip arrow title={items.name}>
+                                    <a href={items.link} target="_blank">
+                                        <img
+                                            src={items.icon}
+                                            alt={items.name}
+                                            className={styles.contactIcons}
+                                            style={{
+                                                animationDelay: `${index / 4}s`,
+                                            }}
+                                        />
+                                    </a>
                                 </Tooltip>
                             );
                         })}
@@ -123,7 +122,7 @@ const About = () => {
                 direction="column"
                 justifyContent="center"
                 alignItems="center"
-                style={{ marginBottom: "10vh" }}
+                style={{ marginBottom: "20vh" }}
             >
                 <Grid item className={styles.experience}>
                     Work Experience
