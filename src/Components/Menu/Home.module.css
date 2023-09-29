@@ -12,11 +12,11 @@
 }
 
 .messages {
-    animation: left-to-right 1s ease-in-out;
+    animation: left-to-right 0.7s ease-in-out;
 }
 
 .profile {
-    animation: top-to-bottom 1s ease-in-out;
+    animation: top-to-bottom 0.7s ease-in-out;
 }
 
 @keyframes left-to-right {

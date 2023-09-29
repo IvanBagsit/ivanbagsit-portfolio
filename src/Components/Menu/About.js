@@ -122,7 +122,7 @@ const About = () => {
                 direction="column"
                 justifyContent="center"
                 alignItems="center"
-                style={{ marginBottom: "10vh" }}
+                style={{ marginBottom: "20vh" }}
             >
                 <Grid item className={styles.experience}>
                     Work Experience
