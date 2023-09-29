@@ -66,92 +66,89 @@ const Portfolio = () => {
         },
     ];
 
+    const cardList = [
+        {
+            name: "Expense Tracker",
+            image: expenseChart,
+            link: "https://expense-chart-ecru.vercel.app/",
+            title: "Simple weekly expense tracker",
+            techStack: expenseTrackerTech,
+        },
+        {
+            name: "Gym Membership",
+            image: gymMembership,
+            link: "https://github.com/IvanBagsit/GymMembership",
+            title: "Gym membership",
+            techStack: gymMembershipTech,
+        },
+    ];
+
+    const randomDurationGenerator = () => {
+        const min = 5;
+        const max = 15;
+        const randomValue = Math.floor(Math.random() * (max - min + 1)) + min;
+        const duration = randomValue.toString() + "s";
+        return duration;
+    };
+
     return (
         <Grid
             container
             direction="row"
-            justifyContent="center"
+            justifyContent="space-around"
             alignItems="center"
             className={styles.background}
         >
-            <Grid item style={{ marginRight: "1%" }}>
-                <Card>
-                    <CardActionArea
-                        onClick={() =>
-                            window.open(
-                                "https://expense-chart-ecru.vercel.app/",
-                                "_blank"
-                            )
-                        }
-                    >
-                        <CardMedia>
-                            <img
-                                src={expenseChart}
-                                alt="expense-chart"
-                                className={styles.cardImage}
-                            />
-                        </CardMedia>
-                        <CardContent>
-                            <Typography>
-                                <span className={styles.details}>
-                                    Simple Weekly Expense Tracker
-                                </span>
-                            </Typography>
-                            {expenseTrackerTech.map((item) => {
-                                return (
-                                    <Tooltip title={item.title} arrow>
-                                        <img
-                                            src={item.icon}
-                                            alt={item.title}
-                                            className={styles.technologies}
-                                        />
-                                    </Tooltip>
-                                );
-                            })}
-                        </CardContent>
-                    </CardActionArea>
-                </Card>
-                <div className={styles.box1}></div>
-            </Grid>
-            <Grid item style={{ marginLeft: "1%" }}>
-                <Card className={styles.item}>
-                    <CardActionArea
-                        onClick={() =>
-                            window.open(
-                                "https://github.com/IvanBagsit/GymMembership",
-                                "_blank"
-                            )
-                        }
-                    >
-                        <CardMedia>
-                            <img
-                                src={gymMembership}
-                                alt="gym-membership"
-                                className={styles.cardImage}
-                            />
-                        </CardMedia>
-                        <CardContent>
-                            <Typography>
-                                <span className={styles.details}>
-                                    Gym Membership
-                                </span>
-                            </Typography>
-                            {gymMembershipTech.map((item) => {
-                                return (
-                                    <Tooltip title={item.title} arrow>
-                                        <img
-                                            src={item.icon}
-                                            alt={item.title}
-                                            className={styles.technologies}
-                                        />
-                                    </Tooltip>
-                                );
-                            })}
-                        </CardContent>
-                    </CardActionArea>
-                </Card>
-                <div className={styles.box2}></div>
-            </Grid>
+            <div className={styles.bubbles}>
+                {[...Array(25)].map((item, index) => {
+                    return (
+                        <span
+                            style={{
+                                animationDuration: randomDurationGenerator(),
+                            }}
+                        />
+                    );
+                })}
+            </div>
+            {cardList.map((item) => {
+                return (
+                    <Grid item>
+                        <Card style={{ zIndex: "10" }}>
+                            <CardActionArea
+                                onClick={() => window.open(item.link, "_blank")}
+                            >
+                                <CardMedia>
+                                    <img
+                                        src={item.image}
+                                        alt={item.name}
+                                        className={styles.cardImage}
+                                    />
+                                </CardMedia>
+                                <CardContent>
+                                    <Typography>
+                                        <span className={styles.details}>
+                                            {item.title}
+                                        </span>
+                                    </Typography>
+                                    {item.techStack.map((item) => {
+                                        return (
+                                            <Tooltip title={item.title} arrow>
+                                                <img
+                                                    src={item.icon}
+                                                    alt={item.title}
+                                                    className={
+                                                        styles.technologies
+                                                    }
+                                                />
+                                            </Tooltip>
+                                        );
+                                    })}
+                                </CardContent>
+                            </CardActionArea>
+                        </Card>
+                    </Grid>
+                );
+            })}
         </Grid>
     );
 };
