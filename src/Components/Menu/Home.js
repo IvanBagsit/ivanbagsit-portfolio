@@ -66,7 +66,7 @@ const Home = () => {
                     Hi, I'm Ivan
                 </Grid>
                 <Grid item className={styles.description}>
-                    I'm a full stack web developer with experiences in the
+                    I'm a full-stack web developer with experience in the
                     following tech stack:
                 </Grid>
                 <Grid item className={styles.description}>
@@ -83,10 +83,10 @@ const Home = () => {
                     })}
                 </Grid>
                 <Grid item className={styles.description}>
-                    I believe in making websites that are clean, simple, and
+                    I believe in creating websites that are clean, simple, and
                     easy to use.
                 </Grid>
-                <Grid>Feel free to checkout other informations about me.</Grid>
+                <Grid>Feel free to check out more information about me.</Grid>
             </Grid>
             <Grid item xs={5.5} className={styles.profile}>
                 <img
