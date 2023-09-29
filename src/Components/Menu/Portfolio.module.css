@@ -1,0 +1,28 @@
+.background {
+    background-color: #0e1538;
+    flex-grow: 1;
+    animation: backgroundChange 0.5s linear;
+}
+
+.cardImage {
+    height: auto;
+    width: 20vw;
+}
+
+.technologies {
+    height: 5vh;
+}
+
+.details {
+    font-size: 16px;
+}
+
+@keyframes backgroundChange {
+    0% {
+        background-color: #ecf1f7;
+    }
+
+    100% {
+        background-color: #0e1538;
+    }
+}

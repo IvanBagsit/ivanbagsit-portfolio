@@ -9,9 +9,42 @@ import reactIcon from "../../Images/logo/reactIcon.png";
 import angularIcon from "../../Images/logo/angularIcon.png";
 import javaIcon from "../../Images/logo/javaIcon.png";
 import springbootIcon from "../../Images/logo/springbootIcon.png";
-import { useEffect } from "react";
 
 const Home = () => {
+    const listTechnologies = [
+        {
+            title: "React",
+            icon: reactIcon,
+        },
+        {
+            title: "Angular",
+            icon: angularIcon,
+        },
+        {
+            title: "Javascript",
+            icon: javascriptIcon,
+        },
+        {
+            title: "Typescript",
+            icon: typescriptIcon,
+        },
+        {
+            title: "HTML",
+            icon: htmlIcon,
+        },
+        {
+            title: "CSS",
+            icon: cssIcon,
+        },
+        {
+            title: "Java",
+            icon: javaIcon,
+        },
+        {
+            title: "Springboot",
+            icon: springbootIcon,
+        },
+    ];
     return (
         <Grid
             container
@@ -37,62 +70,17 @@ const Home = () => {
                     following tech stack:
                 </Grid>
                 <Grid item className={styles.description}>
-                    <Tooltip title={"React"} arrow>
-                        <img
-                            src={reactIcon}
-                            alt="react"
-                            className={styles.technologies}
-                        />
-                    </Tooltip>
-                    <Tooltip title={"Angular"} arrow>
-                        <img
-                            src={angularIcon}
-                            alt="angular"
-                            className={styles.technologies}
-                        />
-                    </Tooltip>
-                    <Tooltip title={"Javascript"} arrow>
-                        <img
-                            src={javascriptIcon}
-                            alt="javascript"
-                            className={styles.technologies}
-                        />
-                    </Tooltip>
-                    <Tooltip title={"Typescript"} arrow>
-                        <img
-                            src={typescriptIcon}
-                            alt="typescript"
-                            className={styles.technologies}
-                        />
-                    </Tooltip>
-                    <Tooltip title={"HTML"} arrow>
-                        <img
-                            src={htmlIcon}
-                            alt="html"
-                            className={styles.technologies}
-                        />
-                    </Tooltip>
-                    <Tooltip title={"CSS"} arrow>
-                        <img
-                            src={cssIcon}
-                            alt="css"
-                            className={styles.technologies}
-                        />
-                    </Tooltip>
-                    <Tooltip title={"Java"} arrow>
-                        <img
-                            src={javaIcon}
-                            alt="java"
-                            className={styles.technologies}
-                        />
-                    </Tooltip>
-                    <Tooltip title={"Springboot"} arrow>
-                        <img
-                            src={springbootIcon}
-                            alt="springboot"
-                            className={styles.technologies}
-                        />
-                    </Tooltip>
+                    {listTechnologies.map((item) => {
+                        return (
+                            <Tooltip title={item.title} arrow>
+                                <img
+                                    src={item.icon}
+                                    alt={item.title}
+                                    className={styles.technologies}
+                                />
+                            </Tooltip>
+                        );
+                    })}
                 </Grid>
                 <Grid item className={styles.description}>
                     I believe in making websites that are clean, simple, and
