@@ -59,7 +59,7 @@ const Home = () => {
                 direction="column"
                 justifyContent="center"
                 alignItems="flex-end"
-                xs={6.5}
+                xs={7}
                 className={styles.messages}
             >
                 <Grid item className={styles.name}>
@@ -88,7 +88,7 @@ const Home = () => {
                 </Grid>
                 <Grid>Feel free to check out more information about me.</Grid>
             </Grid>
-            <Grid item xs={5.5} className={styles.profile}>
+            <Grid item xs={5} className={styles.profile}>
                 <img
                     src={ProfilePicture}
                     alt="Profile"

@@ -8,6 +8,7 @@
     height: 60vh;
     border-radius: 20%;
     object-fit: cover;
+    animation: shadow 4s linear infinite;
 }
 
 .question,
@@ -89,5 +90,19 @@
     }
     100% {
         transform: translateY(0vh);
+    }
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 0 0 0vh transparent;
+    }
+
+    50% {
+        box-shadow: 0 0 2vh #0c192c;
+    }
+
+    100% {
+        box-shadow: 0 0 0vh transparent;
     }
 }
