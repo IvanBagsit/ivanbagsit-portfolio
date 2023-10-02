@@ -9,6 +9,7 @@
     border-radius: 50%;
     object-fit: cover;
     margin-left: 5%;
+    animation: shadow 4s linear infinite;
 }
 
 .messages {
@@ -28,6 +29,20 @@
 @keyframes top-to-bottom {
     0% {
         transform: translateY(-200%)
+    }
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 0 0 0 #0c192c;
+    }
+
+    50% {
+        box-shadow: 0 0 2vh #0c192c;
+    }
+
+    100% {
+        box-shadow: 0 0 0 #0c192c;
     }
 }
 
