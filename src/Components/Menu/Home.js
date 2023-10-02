@@ -66,8 +66,8 @@ const Home = () => {
                     Hi, I'm Ivan
                 </Grid>
                 <Grid item className={styles.description}>
-                    I'm a full-stack web developer with experience in the
-                    following tech stack:
+                    I'm a full-stack web developer with skills and experience in
+                    the following tech stack:
                 </Grid>
                 <Grid item className={styles.description}>
                     {listTechnologies.map((item) => {
