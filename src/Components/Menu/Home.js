@@ -9,6 +9,7 @@ import reactIcon from "../../Images/logo/reactIcon.png";
 import angularIcon from "../../Images/logo/angularIcon.png";
 import javaIcon from "../../Images/logo/javaIcon.png";
 import springbootIcon from "../../Images/logo/springbootIcon.png";
+import materialuiIcon from "../../Images/logo/materialuiIcon.png";
 
 const Home = () => {
     const listTechnologies = [
@@ -19,6 +20,10 @@ const Home = () => {
         {
             title: "Angular",
             icon: angularIcon,
+        },
+        {
+            title: "Material Ui",
+            icon: materialuiIcon,
         },
         {
             title: "Javascript",

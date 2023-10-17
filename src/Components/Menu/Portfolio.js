@@ -8,8 +8,8 @@ import {
     CardActionArea,
 } from "@mui/material";
 import styles from "./Portfolio.module.css";
-import expenseChart from "../../Images/portfolio/expenseChart.png";
 import gymMembership from "../../Images/portfolio/gymMembership.png";
+import sneakersRepublic from "../../Images/portfolio/sneakersRepublic.png";
 import javascriptIcon from "../../Images/logo/javascriptIcon.png";
 import typescriptIcon from "../../Images/logo/typescriptIcon.png";
 import htmlIcon from "../../Images/logo/htmlIcon.png";
@@ -18,12 +18,17 @@ import reactIcon from "../../Images/logo/reactIcon.png";
 import angularIcon from "../../Images/logo/angularIcon.png";
 import javaIcon from "../../Images/logo/javaIcon.png";
 import springbootIcon from "../../Images/logo/springbootIcon.png";
+import materialuiIcon from "../../Images/logo/materialuiIcon.png";
 
 const Portfolio = () => {
-    const expenseTrackerTech = [
+    const sneakersRepublicTech = [
         {
             title: "React",
             icon: reactIcon,
+        },
+        {
+            title: "Material Ui",
+            icon: materialuiIcon,
         },
         {
             title: "Javascript",
@@ -68,11 +73,11 @@ const Portfolio = () => {
 
     const cardList = [
         {
-            name: "Expense Tracker",
-            image: expenseChart,
-            link: "https://expense-chart-ecru.vercel.app/",
-            title: "Simple weekly expense tracker",
-            techStack: expenseTrackerTech,
+            name: "Sneakers Republic (Ongoing)",
+            image: sneakersRepublic,
+            link: "https://sneakers-republic.vercel.app/",
+            title: "Sneakers Republic (Ongoing)",
+            techStack: sneakersRepublicTech,
         },
         {
             name: "Gym Membership",
