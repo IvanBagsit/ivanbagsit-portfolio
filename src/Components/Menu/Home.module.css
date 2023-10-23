@@ -41,6 +41,12 @@
     }
 }
 
+@media (max-width: 600px) {
+    .profilePicture {
+        margin-top: -30%;
+    }
+}
+
 @keyframes left-to-right {
     0% {
         transform: translateX(-100%);

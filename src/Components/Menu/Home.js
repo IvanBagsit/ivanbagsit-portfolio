@@ -90,7 +90,7 @@ const Home = () => {
                     })}
                 </Grid>
                 <Grid item className={styles.description}>
-                    I believe in creating websites that areclean, simple, and
+                    I believe in creating websites that are clean, simple, and
                     easy to use.
                 </Grid>
                 <Grid item className={styles.description}>
