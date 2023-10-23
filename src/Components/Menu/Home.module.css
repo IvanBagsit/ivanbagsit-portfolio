@@ -8,8 +8,13 @@
     height: 40vh;
     border-radius: 50%;
     object-fit: cover;
-    margin-left: 5%;
     animation: shadow 4s linear infinite;
+}
+
+@media (min-width: 600px) {
+    .profilePicture {
+        margin-left: 5%;
+    }
 }
 
 .messages {
@@ -46,12 +51,6 @@
     }
 }
 
-
-.name,
-.description {
-    margin-right: 5%;
-}
-
 .name {
     font-family: 'Blooming Elegant Sans Bold';
     font-weight: bolder;
@@ -60,7 +59,7 @@
 }
 
 .description {
-    margin-top: 1%;
+    text-align: center;
 }
 
 .technologies:hover {
