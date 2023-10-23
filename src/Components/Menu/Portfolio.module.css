@@ -51,6 +51,16 @@
     font-size: 16px;
 }
 
+@media (max-width: 600px) {
+    .cardImage {
+        width: 80vw;
+    }
+
+    .technologies {
+        height: 3vh;
+    }
+}
+
 @keyframes backgroundChange {
     0% {
         background-color: #ecf1f7;
