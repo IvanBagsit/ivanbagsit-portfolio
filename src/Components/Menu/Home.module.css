@@ -43,7 +43,11 @@
 
 @media (max-width: 600px) {
     .profilePicture {
-        margin-top: -30%;
+        margin-top: -20%;
+    }
+
+    .description {
+        width: 90vw;
     }
 }
 
