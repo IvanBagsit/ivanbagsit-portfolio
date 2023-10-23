@@ -1,27 +1,67 @@
 import { ButtonGroup, Button, Toolbar, AppBar, Box } from "@mui/material";
 import { Link } from "react-router-dom";
 import styles from "./Appbar.module.css";
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 const Appbar = () => {
+    const [isLocationPortfolio, setIsLocationPortfolio] = useState(false);
+
+    const location = useLocation();
+
     const buttonGroupStyle = {
-        color: "black",
         fontWeight: "bolder",
         fontFamily: "Blooming Elegant Sans Bold",
     };
 
+    const appBarStyle = {
+        backgroundColor: isLocationPortfolio ? "#0c192c" : "#bffdd9",
+        transition: "background-color 0.5s linear",
+    };
+
+    useEffect(() => {
+        if (location.pathname === "/portfolio") {
+            setIsLocationPortfolio(true);
+        } else {
+            setIsLocationPortfolio(false);
+        }
+    }, [location]);
+
     return (
         <Box>
-            <AppBar position="static" style={{ backgroundColor: "white" }}>
+            <AppBar position="static" style={appBarStyle}>
                 <Toolbar sx={{ justifyContent: "space-between" }}>
                     <Link to={"/"}>
                         <Button variant="text">
-                            <span className={styles.home}>IVAN BAGSIT</span>
+                            <span
+                                className={styles.home}
+                                style={{
+                                    color: `${
+                                        isLocationPortfolio
+                                            ? "#ffffff"
+                                            : "#000000"
+                                    }`,
+                                }}
+                            >
+                                IVAN BAGSIT
+                            </span>
                         </Button>
                     </Link>
                     <ButtonGroup variant="text">
                         <Link to={"/home"}>
                             <Button
-                                style={{ borderRightColor: "#7c7775" }}
+                                style={{
+                                    borderRightColor: `${
+                                        isLocationPortfolio
+                                            ? "#ffffff"
+                                            : "#000000"
+                                    }`,
+                                    color: `${
+                                        isLocationPortfolio
+                                            ? "#ffffff"
+                                            : "#000000"
+                                    }`,
+                                }}
                                 sx={buttonGroupStyle}
                             >
                                 Home
@@ -29,7 +69,18 @@ const Appbar = () => {
                         </Link>
                         <Link to={"/about"}>
                             <Button
-                                style={{ borderRightColor: "#7c7775" }}
+                                style={{
+                                    borderRightColor: `${
+                                        isLocationPortfolio
+                                            ? "#ffffff"
+                                            : "#000000"
+                                    }`,
+                                    color: `${
+                                        isLocationPortfolio
+                                            ? "#ffffff"
+                                            : "#000000"
+                                    }`,
+                                }}
                                 sx={buttonGroupStyle}
                             >
                                 About Me
@@ -37,8 +88,14 @@ const Appbar = () => {
                         </Link>
                         <Link to={"/portfolio"}>
                             <Button
-                                style={{ borderRightColor: "#7c7775" }}
                                 sx={buttonGroupStyle}
+                                style={{
+                                    color: `${
+                                        isLocationPortfolio
+                                            ? "#ffffff"
+                                            : "#000000"
+                                    }`,
+                                }}
                             >
                                 Portfolio
                             </Button>
