@@ -60,11 +60,17 @@ const About = () => {
             >
                 <Grid
                     item
-                    xs={5}
+                    xs={12}
+                    sm={12}
+                    md={5}
                     container
                     direction="column"
                     justifyContent="center"
-                    alignItems="flex-end"
+                    alignItems={{
+                        xs: "center",
+                        sm: "center",
+                        md: "flex-end",
+                    }}
                 >
                     <img
                         src={ProfilePicture}
@@ -77,8 +83,14 @@ const About = () => {
                     container
                     direction="column"
                     justifyContent="center"
-                    alignItems="flex-start"
-                    xs={7}
+                    alignItems={{
+                        xs: "center",
+                        sm: "center",
+                        md: "flex-start",
+                    }}
+                    xs={12}
+                    sm={12}
+                    md={7}
                 >
                     <Grid item className={styles.question}>
                         Who is this guy?
@@ -139,8 +151,14 @@ const About = () => {
                         container
                         direction="column"
                         justifyContent="center"
-                        alignItems="flex-end"
-                        xs={6.5}
+                        alignItems={{
+                            xs: "center",
+                            sm: "center",
+                            md: "flex-end",
+                        }}
+                        xs={12}
+                        sm={12}
+                        md={6.5}
                     >
                         <Grid item className={styles.workTitle}>
                             <b>MDI Novare Technologies</b>
@@ -158,7 +176,20 @@ const About = () => {
                             based on client's demand and deadline.
                         </Grid>
                     </Grid>
-                    <Grid item xs={5.5}>
+                    <Grid
+                        item
+                        container
+                        direction="column"
+                        justifyContent="center"
+                        alignItems={{
+                            xs: "center",
+                            sm: "center",
+                            md: "flex-start",
+                        }}
+                        xs={12}
+                        sm={12}
+                        md={5.5}
+                    >
                         <img
                             src={novareLogo}
                             alt="novare"

@@ -63,8 +63,10 @@ const Home = () => {
                 item
                 direction="column"
                 justifyContent="center"
-                alignItems="flex-end"
-                xs={7}
+                alignItems={{ xs: "center", sm: "center", md: "flex-end" }}
+                xs={12}
+                sm={12}
+                md={7}
                 className={styles.messages}
             >
                 <Grid item className={styles.name}>
@@ -93,7 +95,21 @@ const Home = () => {
                 </Grid>
                 <Grid>Feel free to check out more information about me.</Grid>
             </Grid>
-            <Grid item xs={5} className={styles.profile}>
+            <Grid
+                item
+                xs={12}
+                sm={12}
+                md={5}
+                container
+                direction="row"
+                justifyContent={{
+                    xs: "center",
+                    sm: "center",
+                    md: "flex-start",
+                }}
+                alignItems="center"
+                className={styles.profile}
+            >
                 <img
                     src={ProfilePicture}
                     alt="Profile"
