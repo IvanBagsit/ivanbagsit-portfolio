@@ -56,7 +56,7 @@ const About = () => {
                 direction="row"
                 justifyContent="center"
                 alignItems="center"
-                style={{ marginTop: "10vh" }}
+                style={{ marginTop: "7vh" }}
             >
                 <Grid
                     item
