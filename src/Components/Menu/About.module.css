@@ -11,12 +11,6 @@
     animation: shadow 4s linear infinite;
 }
 
-@media (max-width: 600px) {
-    .profilePicture {
-        height: 45vh;
-    }
-}
-
 @media (min-width: 600px) {
     .profilePicture {
         margin-right: 5%;
@@ -30,24 +24,8 @@
     padding-bottom: 1%;
 }
 
-@media (max-width: 600px) {
-    .question {
-        text-align: center;
-        width: 100vw;
-        padding: 3% 0 3% 0;
-    }
-}
-
 .informations {
     width: 80vh;
-}
-
-@media (max-width: 600px) {
-    .informations {
-        text-align: center;
-        width: 100vw;
-        padding-bottom: 3%;
-    }
 }
 
 .contact {
@@ -80,15 +58,45 @@
     object-fit: cover;
 }
 
-.workTitle,
-.workDescription {
-    padding-right: 5%;
+@media (min-width: 600px) {
+    .company {
+        margin-left: 5%;
+    }
 }
 
 .workDescription {
     padding-top: 3%;
     padding-bottom: 3%;
     width: 80vh;
+}
+
+@media (max-width: 600px) {
+    .profilePicture {
+        height: 45vh;
+    }
+
+    .question {
+        text-align: center;
+        width: 100vw;
+        padding: 3% 0 3% 0;
+    }
+
+    .informations {
+        text-align: center;
+        width: 100vw;
+        padding-bottom: 3%;
+    }
+
+    .company {
+        width: 70vw;
+    }
+
+    .workTitle,
+    .workDescription {
+        text-align: center;
+        width: 100vw;
+        border: '1px solid red';
+    }
 }
 
 @keyframes bounce {
