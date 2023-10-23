@@ -11,18 +11,34 @@
     animation: shadow 4s linear infinite;
 }
 
-@media (min-width: 600px) {
-    .profilePicture {
-        margin-left: 5%;
-    }
-}
-
 .messages {
     animation: left-to-right 0.7s ease-in-out;
 }
 
 .profile {
     animation: top-to-bottom 0.7s ease-in-out;
+}
+
+.name {
+    font-family: 'Blooming Elegant Sans Bold';
+    font-weight: bolder;
+    font-size: 60px;
+    margin-bottom: 1%;
+}
+
+.description {
+    text-align: center;
+}
+
+.technologies:hover {
+    height: 10vh;
+    width: auto;
+}
+
+@media (min-width: 600px) {
+    .profilePicture {
+        margin-left: 5%;
+    }
 }
 
 @keyframes left-to-right {
@@ -49,20 +65,4 @@
     100% {
         box-shadow: 0 0 0 #0c192c;
     }
-}
-
-.name {
-    font-family: 'Blooming Elegant Sans Bold';
-    font-weight: bolder;
-    font-size: 60px;
-    margin-bottom: 1%;
-}
-
-.description {
-    text-align: center;
-}
-
-.technologies:hover {
-    height: 10vh;
-    width: auto;
 }

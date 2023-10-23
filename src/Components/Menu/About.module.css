@@ -11,12 +11,6 @@
     animation: shadow 4s linear infinite;
 }
 
-@media (min-width: 600px) {
-    .profilePicture {
-        margin-right: 5%;
-    }
-}
-
 .question {
     font-family: 'Blooming Elegant Sans Bold';
     font-weight: bolder;
@@ -58,12 +52,6 @@
     object-fit: cover;
 }
 
-@media (min-width: 600px) {
-    .company {
-        margin-left: 5%;
-    }
-}
-
 .workDescription {
     padding-top: 3%;
     padding-bottom: 3%;
@@ -96,6 +84,16 @@
         text-align: center;
         width: 100vw;
         border: '1px solid red';
+    }
+}
+
+@media (min-width: 600px) {
+    .company {
+        margin-left: 5%;
+    }
+    
+    .profilePicture {
+        margin-right: 5%;
     }
 }
 
