@@ -89,8 +89,20 @@ const Portfolio = () => {
     ];
 
     const randomDurationGenerator = () => {
-        const min = 5;
-        const max = 15;
+        const screenWidth = window.innerWidth;
+        let min, max;
+
+        if (screenWidth >= 1200) {
+            min = 5;
+            max = 15;
+        } else if (screenWidth >= 768) {
+            min = 6.5;
+            max = 18;
+        } else {
+            min = 8;
+            max = 20;
+        }
+
         const randomValue = Math.floor(Math.random() * (max - min + 1)) + min;
         const duration = randomValue.toString() + "s";
         return duration;
