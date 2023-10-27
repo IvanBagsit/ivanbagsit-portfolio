@@ -5,7 +5,6 @@
 
 .profilePicture{
     width: auto;
-    height: 60vh;
     border-radius: 20%;
     object-fit: cover;
     animation: shadow 4s linear infinite;
@@ -90,13 +89,26 @@
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1000px) {
     .company {
         margin-left: 5%;
     }
     
     .profilePicture {
         margin-right: 5%;
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+    .company {
+        margin-left: 5%;
+        width: 30vw;
+    }
+
+    .profilePicture {
+        margin-right: 5%;
+        height: 40vw;
     }
 }
 
