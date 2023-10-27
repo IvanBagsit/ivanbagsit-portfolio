@@ -63,11 +63,10 @@ const Home = () => {
                 item
                 direction="column"
                 justifyContent="center"
-                alignItems={{ xs: "center", sm: "flex-end", md: "flex-end" }}
+                alignItems={{ xs: "center", sm: "center", md: "flex-end" }}
                 xs={12}
                 sm={12}
-                md={8}
-                lg={7}
+                md={7}
                 className={styles.messages}
             >
                 <Grid item className={styles.name}>
@@ -102,13 +101,12 @@ const Home = () => {
                 item
                 xs={12}
                 sm={12}
-                md={4}
-                lg={5}
+                md={5}
                 container
                 direction="row"
                 justifyContent={{
                     xs: "center",
-                    sm: "flex-start",
+                    sm: "center",
                     md: "flex-start",
                 }}
                 alignItems="center"
