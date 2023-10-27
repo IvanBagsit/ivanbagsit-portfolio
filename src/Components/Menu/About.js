@@ -61,8 +61,9 @@ const About = () => {
                 <Grid
                     item
                     xs={12}
-                    sm={5}
-                    md={5}
+                    sm={12}
+                    md={6}
+                    lg={5}
                     container
                     direction="column"
                     justifyContent="center"
@@ -89,8 +90,9 @@ const About = () => {
                         md: "flex-start",
                     }}
                     xs={12}
-                    sm={7}
-                    md={7}
+                    sm={12}
+                    md={6}
+                    lg={7}
                 >
                     <Grid item className={styles.question}>
                         Who is this guy?
