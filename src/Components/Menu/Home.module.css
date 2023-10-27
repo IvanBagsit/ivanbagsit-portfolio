@@ -41,7 +41,6 @@
     }
 }
 
-/* mobile portrait view */
 @media (max-width: 600px) {
     .profilePicture {
         margin-top: -20%;
@@ -49,15 +48,6 @@
 
     .description {
         width: 90vw;
-    }
-}
-
-@media (min-width: 600px) and (max-width: 1000px)  {
-
-    .profilePicture {
-        margin-left: 5%;
-        height: 50vh;
-        width: 50vh
     }
 }
 
