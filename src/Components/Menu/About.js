@@ -61,14 +61,14 @@ const About = () => {
                 <Grid
                     item
                     xs={12}
-                    sm={5}
+                    sm={12}
                     md={5}
                     container
                     direction="column"
                     justifyContent="center"
                     alignItems={{
                         xs: "center",
-                        sm: "flex-end",
+                        sm: "center",
                         md: "flex-end",
                     }}
                 >
@@ -85,11 +85,11 @@ const About = () => {
                     justifyContent="center"
                     alignItems={{
                         xs: "center",
-                        sm: "flex-start",
+                        sm: "center",
                         md: "flex-start",
                     }}
                     xs={12}
-                    sm={7}
+                    sm={12}
                     md={7}
                 >
                     <Grid item className={styles.question}>
@@ -153,11 +153,11 @@ const About = () => {
                         justifyContent="center"
                         alignItems={{
                             xs: "center",
-                            sm: "flex-end",
+                            sm: "center",
                             md: "flex-end",
                         }}
                         xs={12}
-                        sm={6.5}
+                        sm={12}
                         md={6.5}
                     >
                         <Grid item className={styles.workTitle}>
@@ -183,11 +183,11 @@ const About = () => {
                         justifyContent="center"
                         alignItems={{
                             xs: "center",
-                            sm: "flex-start",
+                            sm: "center",
                             md: "flex-start",
                         }}
                         xs={12}
-                        sm={5.5}
+                        sm={12}
                         md={5.5}
                     >
                         <img
