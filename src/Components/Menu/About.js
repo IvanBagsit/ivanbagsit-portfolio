@@ -62,7 +62,7 @@ const About = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={5}
+                    md={5.5}
                     container
                     direction="column"
                     justifyContent="center"
@@ -90,7 +90,7 @@ const About = () => {
                     }}
                     xs={12}
                     sm={12}
-                    md={7}
+                    md={6.5}
                 >
                     <Grid item className={styles.question}>
                         Who is this guy?
@@ -111,7 +111,11 @@ const About = () => {
                     <Grid item className={styles.contactIconsGroup}>
                         {contactDetails.map((items, index) => {
                             return (
-                                <Tooltip arrow title={items.name}>
+                                <Tooltip
+                                    arrow
+                                    title={items.name}
+                                    key={items.name}
+                                >
                                     <a href={items.link} target="_blank">
                                         <img
                                             src={items.icon}
@@ -158,7 +162,7 @@ const About = () => {
                         }}
                         xs={12}
                         sm={12}
-                        md={6.5}
+                        md={7}
                     >
                         <Grid item className={styles.workTitle}>
                             <b>MDI Novare Technologies</b>
@@ -188,7 +192,7 @@ const About = () => {
                         }}
                         xs={12}
                         sm={12}
-                        md={5.5}
+                        md={5}
                     >
                         <img
                             src={novareLogo}
