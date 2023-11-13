@@ -10,6 +10,7 @@ import angularIcon from "../../Images/logo/angularIcon.png";
 import javaIcon from "../../Images/logo/javaIcon.png";
 import springbootIcon from "../../Images/logo/springbootIcon.png";
 import materialuiIcon from "../../Images/logo/materialuiIcon.png";
+import mySQLIcon from "../../Images/logo/mysqlIcon.png";
 
 const Home = () => {
     const listTechnologies = [
@@ -48,6 +49,10 @@ const Home = () => {
         {
             title: "Springboot",
             icon: springbootIcon,
+        },
+        {
+            title: "mySQL",
+            icon: mySQLIcon,
         },
     ];
     return (
