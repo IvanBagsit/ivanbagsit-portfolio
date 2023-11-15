@@ -1,4 +1,4 @@
-import { Grid, Tooltip } from "@mui/material";
+import { Button, Grid, Tooltip } from "@mui/material";
 import styles from "./About.module.css";
 import ProfilePicture from "../../Images/owner2.jpg";
 import gmailIcon from "../../Images/contacts/gmailIcon.png";
@@ -7,6 +7,9 @@ import githubIcon from "../../Images/contacts/githubIcon.png";
 import facebookIcon from "../../Images/contacts/facebookIcon.png";
 import instagramIcon from "../../Images/contacts/instagramIcon.png";
 import novareLogo from "../../Images/experience/novare.jpg";
+import latestCV from "../../Files/Latest CV.pdf";
+
+import DownloadForOfflineIcon from "@mui/icons-material/DownloadForOffline";
 
 const About = () => {
     const gmailCompose = {
@@ -42,6 +45,17 @@ const About = () => {
             link: "https://www.instagram.com/ivanbagsit_/",
         },
     ];
+
+    const handleDownload = () => {
+        const fileUrl = latestCV;
+        const link = document.createElement("a");
+        link.href = fileUrl;
+        link.download = "ivanbagsit-CV.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
     return (
         <Grid
             container
@@ -129,6 +143,17 @@ const About = () => {
                                 </Tooltip>
                             );
                         })}
+                    </Grid>
+                    <Grid item>
+                        <Button
+                            variant="contained"
+                            startIcon={<DownloadForOfflineIcon />}
+                            onClick={handleDownload}
+                            color="secondary"
+                            style={{ marginTop: "5%" }}
+                        >
+                            Download CV
+                        </Button>
                     </Grid>
                 </Grid>
             </Grid>
