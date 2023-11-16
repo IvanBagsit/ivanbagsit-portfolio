@@ -115,7 +115,7 @@ const About = () => {
                         a young age, inspired by the TV series 'BattleBots.' He
                         began coding during his college days, primarily focusing
                         on robots using Arduino with the C/C++ programming
-                        languages. Now, he is expanding his passion into web
+                        language. Now, he is expanding his passion into web
                         development to showcase his skills and further his
                         programming knowledge.
                     </Grid>
