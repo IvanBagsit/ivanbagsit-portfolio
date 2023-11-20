@@ -121,6 +121,7 @@ const Portfolio = () => {
                 init={particlesInit}
                 loaded={particlesLoaded}
                 options={config}
+                className={styles.particles}
             />
 
             {cardList.map((item) => {
