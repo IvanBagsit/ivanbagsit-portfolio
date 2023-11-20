@@ -21,6 +21,12 @@ import springbootIcon from "../../Images/logo/springbootIcon.png";
 import materialuiIcon from "../../Images/logo/materialuiIcon.png";
 import mySQLIcon from "../../Images/logo/mysqlIcon.png";
 
+import { useCallback } from "react";
+import Particles from "react-particles";
+import { loadSlim } from "tsparticles-slim";
+
+import config from "../Config/Particle.json";
+
 const Portfolio = () => {
     const sneakersRepublicTech = [
         {
@@ -93,25 +99,14 @@ const Portfolio = () => {
         },
     ];
 
-    const randomDurationGenerator = () => {
-        const screenWidth = window.innerWidth;
-        let min, max;
+    const particlesInit = useCallback(async (engine) => {
+        console.log(engine);
+        await loadSlim(engine);
+    }, []);
 
-        if (screenWidth >= 1200) {
-            min = 5;
-            max = 15;
-        } else if (screenWidth >= 768) {
-            min = 6.5;
-            max = 18;
-        } else {
-            min = 8;
-            max = 20;
-        }
-
-        const randomValue = Math.floor(Math.random() * (max - min + 1)) + min;
-        const duration = randomValue.toString() + "s";
-        return duration;
-    };
+    const particlesLoaded = useCallback(async (container) => {
+        await console.log(container);
+    }, []);
 
     return (
         <Grid
@@ -121,17 +116,13 @@ const Portfolio = () => {
             alignItems="center"
             className={styles.background}
         >
-            <div className={styles.bubbles}>
-                {[...Array(25)].map((item, index) => {
-                    return (
-                        <span
-                            style={{
-                                animationDuration: randomDurationGenerator(),
-                            }}
-                        />
-                    );
-                })}
-            </div>
+            <Particles
+                id="tsparticles"
+                init={particlesInit}
+                loaded={particlesLoaded}
+                options={config}
+            />
+
             {cardList.map((item) => {
                 return (
                     <Grid item>
