@@ -1,6 +1,6 @@
 import { Grid, Tooltip } from "@mui/material";
 import styles from "./Home.module.css";
-import ProfilePicture from "../../Images/owner.jpg";
+import ProfilePicture from "../../Images/owner.JPG";
 import javascriptIcon from "../../Images/logo/javascriptIcon.png";
 import typescriptIcon from "../../Images/logo/typescriptIcon.png";
 import htmlIcon from "../../Images/logo/htmlIcon.png";
