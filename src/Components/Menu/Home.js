@@ -1,6 +1,6 @@
 import { Grid, Tooltip } from "@mui/material";
 import styles from "./Home.module.css";
-import ProfilePicture from "../../Images/owner.JPG";
+import ProfilePicture from "../../Images/owner.jpg";
 import javascriptIcon from "../../Images/logo/javascriptIcon.png";
 import typescriptIcon from "../../Images/logo/typescriptIcon.png";
 import htmlIcon from "../../Images/logo/htmlIcon.png";
@@ -84,7 +84,7 @@ const Home = () => {
                 <Grid item className={styles.description}>
                     {listTechnologies.map((item) => {
                         return (
-                            <Tooltip title={item.title} arrow>
+                            <Tooltip title={item.title} arrow key={item.title}>
                                 <img
                                     src={item.icon}
                                     alt={item.title}

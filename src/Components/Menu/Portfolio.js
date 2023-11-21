@@ -126,7 +126,7 @@ const Portfolio = () => {
 
             {cardList.map((item) => {
                 return (
-                    <Grid item>
+                    <Grid item key={item.name}>
                         <Card style={{ zIndex: "10" }}>
                             <CardActionArea
                                 onClick={() => window.open(item.link, "_blank")}
@@ -146,7 +146,11 @@ const Portfolio = () => {
                                     </Typography>
                                     {item.techStack.map((item) => {
                                         return (
-                                            <Tooltip title={item.title} arrow>
+                                            <Tooltip
+                                                title={item.title}
+                                                arrow
+                                                key={item.title}
+                                            >
                                                 <img
                                                     src={item.icon}
                                                     alt={item.title}
