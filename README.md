@@ -18,12 +18,12 @@ Tools/Library used:
 
 -   React
 -   Material-UI
--   Redux
--   React-Router-Dom
--   React-Particles
--   TSParticles
+-   react-router-dom
+-   react-particles
+-   tsparticles
+-   typewriter-effect
 
-Programming Language used:
+Programming Languages used:
 
 -   Javascript
 -   HTML
