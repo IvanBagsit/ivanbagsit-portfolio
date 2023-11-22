@@ -93,9 +93,9 @@ const Home = () => {
                                 .typeString("Gamer")
                                 .pauseFor(500)
                                 .deleteChars(5)
+                                .typeString(`Hi, I'm Ivan`)
                                 .start();
                         }}
-                        options={{ loop: true }}
                     />
                 </Grid>
                 <Grid item className={styles.description}>
