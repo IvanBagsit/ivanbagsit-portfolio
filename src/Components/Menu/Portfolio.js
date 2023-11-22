@@ -25,7 +25,7 @@ import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
 
-import config from "../Config/Particle.json";
+import particleConfig from "../Config/Particle.json";
 
 const Portfolio = () => {
     const sneakersRepublicTech = [
@@ -120,14 +120,14 @@ const Portfolio = () => {
                 id="tsparticles"
                 init={particlesInit}
                 loaded={particlesLoaded}
-                options={config}
+                options={particleConfig}
                 className={styles.particles}
             />
 
             {cardList.map((item) => {
                 return (
-                    <Grid item key={item.name}>
-                        <Card style={{ zIndex: "10" }}>
+                    <Grid item key={item.name} style={{ zIndex: "10" }}>
+                        <Card>
                             <CardActionArea
                                 onClick={() => window.open(item.link, "_blank")}
                             >

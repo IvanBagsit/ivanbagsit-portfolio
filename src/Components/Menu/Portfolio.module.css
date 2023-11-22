@@ -8,7 +8,7 @@
 .particles {
     position: absolute;
     display: flex;
-    z-index: 1;
+    z-index: 0;
 }
 
 .cardImage {

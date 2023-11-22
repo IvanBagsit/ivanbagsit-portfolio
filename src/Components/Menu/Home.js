@@ -12,6 +12,8 @@ import springbootIcon from "../../Images/logo/springbootIcon.png";
 import materialuiIcon from "../../Images/logo/materialuiIcon.png";
 import mySQLIcon from "../../Images/logo/mysqlIcon.png";
 
+import Typewriter from "typewriter-effect";
+
 const Home = () => {
     const listTechnologies = [
         {
@@ -75,7 +77,26 @@ const Home = () => {
                 className={styles.messages}
             >
                 <Grid item className={styles.name}>
-                    Hi, I'm Ivan
+                    <Typewriter
+                        onInit={(typewriter) => {
+                            typewriter
+                                .pauseFor(100)
+                                .typeString(`Hi, I'm Ivan`)
+                                .pauseFor(1500)
+                                .deleteChars(12)
+                                .typeString("Engineer")
+                                .pauseFor(500)
+                                .deleteChars(8)
+                                .typeString("Developer")
+                                .pauseFor(500)
+                                .deleteChars(9)
+                                .typeString("Gamer")
+                                .pauseFor(500)
+                                .deleteChars(5)
+                                .start();
+                        }}
+                        options={{ loop: true }}
+                    />
                 </Grid>
                 <Grid item className={styles.description}>
                     I'm a full-stack web developer with skills and experience in
