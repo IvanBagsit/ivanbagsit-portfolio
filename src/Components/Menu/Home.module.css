@@ -11,14 +11,6 @@
     animation: shadow 4s linear infinite;
 }
 
-.messages {
-    animation: left-to-right 0.7s ease-in-out;
-}
-
-.profile {
-    animation: top-to-bottom 0.7s ease-in-out;
-}
-
 .name {
     font-family: 'Blooming Elegant Sans Bold';
     font-weight: bolder;
@@ -48,18 +40,6 @@
 
     .description {
         width: 90vw;
-    }
-}
-
-@keyframes left-to-right {
-    0% {
-        transform: translateX(-100%);
-    }
-}
-
-@keyframes top-to-bottom {
-    0% {
-        transform: translateY(-200%)
     }
 }
 
