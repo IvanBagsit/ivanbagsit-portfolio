@@ -11,6 +11,14 @@
     animation: shadow 4s linear infinite;
 }
 
+.messages {
+    animation: left-to-right 0.7s ease-in-out;
+}
+
+.profile {
+    animation: top-to-bottom 0.7s ease-in-out;
+}
+
 .name {
     font-family: 'Blooming Elegant Sans Bold';
     font-weight: bolder;
@@ -25,6 +33,18 @@
 .technologies:hover {
     height: 10vh;
     width: auto;
+}
+
+@keyframes left-to-right {
+    0% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes top-to-bottom {
+    0% {
+        transform: translateY(-200%)
+    }
 }
 
 @media (min-width: 600px) {
@@ -45,14 +65,14 @@
 
 @keyframes shadow {
     0% {
-        box-shadow: 0 0 0 #0c192c;
+        box-shadow: 0 0 1vh #0c192c;
     }
 
     50% {
-        box-shadow: 0 0 2vh #0c192c;
+        box-shadow: 0 0 5vh #0c192c;
     }
 
     100% {
-        box-shadow: 0 0 0 #0c192c;
+        box-shadow: 0 0 1vh #0c192c;
     }
 }
