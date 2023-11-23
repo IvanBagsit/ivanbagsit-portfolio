@@ -71,7 +71,7 @@ const About = () => {
         const device = DeviceChecker();
 
         if (device === "phone") {
-            additionalSize = -100;
+            additionalSize = 370;
         } else {
             additionalSize = 200;
         }
