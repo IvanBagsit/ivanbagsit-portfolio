@@ -10,6 +10,8 @@ import novareLogo from "../../Images/experience/novare.jpg";
 import latestCV from "../../Files/Latest CV.pdf";
 
 import DownloadForOfflineIcon from "@mui/icons-material/DownloadForOffline";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import DeviceChecker from "../Config/DeviceChecker";
 
 const About = () => {
     const gmailCompose = {
@@ -55,6 +57,36 @@ const About = () => {
         link.click();
         document.body.removeChild(link);
     };
+
+    const [isCompanyVisible, setIsCompanyVisible] = useState(false);
+
+    const logoRef = useRef(null);
+
+    const onScroll = () => {
+        const scrollPos = window.scrollY + window.innerHeight;
+        const rect = logoRef.current.getBoundingClientRect();
+
+        let additionalSize = 0;
+
+        const device = DeviceChecker();
+
+        if (device === "desktop") {
+            additionalSize = 200;
+        } else {
+            additionalSize = -100;
+        }
+
+        console.log("additionalSize", additionalSize);
+
+        if (rect.bottom + additionalSize < scrollPos) {
+            setIsCompanyVisible(true);
+        }
+    };
+
+    useLayoutEffect(() => {
+        window.addEventListener("scroll", onScroll);
+        return () => window.removeEventListener("scroll", onScroll);
+    });
 
     return (
         <Grid
@@ -224,7 +256,23 @@ const About = () => {
                         <img
                             src={novareLogo}
                             alt="novare"
-                            className={styles.company}
+                            className={`
+                            ${styles.company} 
+                            ${
+                                DeviceChecker() === "desktop"
+                                    ? styles.translateX
+                                    : styles.translateY
+                            }
+                            ${
+                                isCompanyVisible
+                                    ? `${
+                                          DeviceChecker() === "desktop"
+                                              ? styles.companyAnimationX
+                                              : styles.companyAnimationY
+                                      }`
+                                    : ""
+                            }`}
+                            ref={logoRef}
                         />
                     </Grid>
                 </Grid>
