@@ -126,14 +126,14 @@
 
 @keyframes shadow {
     0% {
-        box-shadow: 0 0 0vh transparent;
+        box-shadow: 0 0 1vh transparent;
     }
 
     50% {
-        box-shadow: 0 0 2vh #0c192c;
+        box-shadow: 0 0 4vh #0c192c;
     }
 
     100% {
-        box-shadow: 0 0 0vh transparent;
+        box-shadow: 0 0 1vh transparent;
     }
 }

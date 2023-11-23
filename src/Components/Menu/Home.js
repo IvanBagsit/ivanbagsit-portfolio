@@ -80,9 +80,9 @@ const Home = () => {
                     <Typewriter
                         onInit={(typewriter) => {
                             typewriter
-                                .pauseFor(100)
+                                .pauseFor(900)
                                 .typeString(`Hi, I'm Ivan`)
-                                .pauseFor(1500)
+                                .pauseFor(1000)
                                 .deleteChars(12)
                                 .typeString("Engineer")
                                 .pauseFor(500)
