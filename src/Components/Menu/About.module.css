@@ -52,6 +52,22 @@
     object-fit: cover;
 }
 
+.companyAnimationX {
+    animation: slide-x 0.7s ease-in forwards;
+}
+
+.companyAnimationY {
+    animation: slide-y 0.5s ease-in forwards;
+}
+
+.translateX {
+    transform: translateX(-500%);
+}
+
+.translateY {
+    transform: translateY(400%);
+}
+
 .workDescription {
     padding-top: 3%;
     width: 80vh;
@@ -144,5 +160,25 @@
 
     100% {
         box-shadow: 0 0 1vh #0c192c;
+    }
+}
+
+@keyframes slide-x {
+    0% {
+        transform: translateX(200%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-y {
+    0% {
+        transform: translateY(200%);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }
