@@ -70,13 +70,11 @@ const About = () => {
 
         const device = DeviceChecker();
 
-        if (device === "desktop") {
-            additionalSize = 200;
-        } else {
+        if (device === "phone") {
             additionalSize = -100;
+        } else {
+            additionalSize = 200;
         }
-
-        console.log("additionalSize", additionalSize);
 
         if (rect.bottom + additionalSize < scrollPos) {
             setIsCompanyVisible(true);
