@@ -64,8 +64,8 @@
     transform: translateX(-500%);
 }
 
-.translateY {
-    transform: translateY(400%);
+.translatePhone {
+    transform: translateX(-200%);
 }
 
 .workDescription {
@@ -175,10 +175,10 @@
 
 @keyframes slide-y {
     0% {
-        transform: translateY(200%);
+        transform: translateX(-200%);
     }
 
     100% {
-        transform: translateY(0);
+        transform: translateX(0);
     }
 }
