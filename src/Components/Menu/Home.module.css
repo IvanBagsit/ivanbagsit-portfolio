@@ -51,6 +51,10 @@
     .profilePicture {
         margin-left: 5%;
     }
+
+    .content {
+        height: 100%;
+    }
 }
 
 @media (max-width: 600px) {
@@ -61,6 +65,10 @@
     .description {
         width: 90vw;
     }
+    
+    .content {
+        height: 90vh;
+    }
 }
 
 @keyframes shadow {
@@ -69,7 +77,7 @@
     }
 
     50% {
-        box-shadow: 0 0 5vh #0c192c;
+        box-shadow: 0 0 4vh #0c192c;
     }
 
     100% {

@@ -60,7 +60,7 @@ const About = () => {
         <Grid
             container
             direction="column"
-            justifyContent="flex-start"
+            justifyContent="center"
             alignItems="center"
             className={styles.background}
         >
@@ -70,7 +70,7 @@ const About = () => {
                 direction="row"
                 justifyContent="center"
                 alignItems="center"
-                style={{ marginTop: "7vh" }}
+                className={styles.details}
             >
                 <Grid
                     item
@@ -163,7 +163,9 @@ const About = () => {
                 direction="column"
                 justifyContent="center"
                 alignItems="center"
-                style={{ marginBottom: "20vh" }}
+                style={{
+                    height: "70vh",
+                }}
             >
                 <Grid item className={styles.experience}>
                     Work Experience
