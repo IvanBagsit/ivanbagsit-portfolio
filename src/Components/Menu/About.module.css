@@ -1,6 +1,6 @@
 .background {
     background-color: #ecf1f7;
-    flex-grow: 1;
+    height: auto;
 }
 
 .profilePicture{
@@ -40,7 +40,7 @@
     font-family: 'Blooming Elegant Sans Bold';
     font-weight: bolder;
     font-size: 50px;
-    padding: 10% 0 3% 0;
+    padding: 0 0 3% 0;
     text-align: center;
 }
 
@@ -58,14 +58,19 @@
 }
 
 @media (max-width: 600px) {
+    .details {
+        height: 100vh;
+    }
+
     .profilePicture {
         height: 45vh;
+        margin-bottom: -10%;
     }
 
     .question {
         text-align: center;
         width: 100vw;
-        padding: 3% 0 3% 0;
+        padding-bottom: 3%;
     }
 
     .informations {
@@ -93,6 +98,10 @@
 @media (min-width: 600px) {
     .company {
         margin-left: 5%;
+    }
+
+    .details {
+        height: 90vh;
     }
     
     .profilePicture {
@@ -126,7 +135,7 @@
 
 @keyframes shadow {
     0% {
-        box-shadow: 0 0 1vh transparent;
+        box-shadow: 0 0 1vh #0c192c;
     }
 
     50% {
@@ -134,6 +143,6 @@
     }
 
     100% {
-        box-shadow: 0 0 1vh transparent;
+        box-shadow: 0 0 1vh #0c192c;
     }
 }

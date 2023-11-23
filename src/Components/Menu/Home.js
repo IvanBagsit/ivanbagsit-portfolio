@@ -58,93 +58,99 @@ const Home = () => {
         },
     ];
     return (
-        <Grid
-            container
-            direction="row"
-            justifyContent="center"
-            alignItems="center"
-            className={styles.background}
-        >
+        <div className={styles.background}>
             <Grid
-                container
-                item
-                direction="column"
-                justifyContent="center"
-                alignItems={{ xs: "center", sm: "center", md: "flex-end" }}
-                xs={12}
-                sm={12}
-                md={7}
-                className={styles.messages}
-            >
-                <Grid item className={styles.name}>
-                    <Typewriter
-                        onInit={(typewriter) => {
-                            typewriter
-                                .pauseFor(900)
-                                .typeString(`Hi, I'm Ivan`)
-                                .pauseFor(1000)
-                                .deleteChars(12)
-                                .typeString("Engineer")
-                                .pauseFor(500)
-                                .deleteChars(8)
-                                .typeString("Developer")
-                                .pauseFor(500)
-                                .deleteChars(9)
-                                .typeString("Gamer")
-                                .pauseFor(500)
-                                .deleteChars(5)
-                                .typeString(`Hi, I'm Ivan`)
-                                .start();
-                        }}
-                    />
-                </Grid>
-                <Grid item className={styles.description}>
-                    I'm a full-stack web developer with skills and experience in
-                    the following tech stack:
-                </Grid>
-                <Grid item className={styles.description}>
-                    {listTechnologies.map((item) => {
-                        return (
-                            <Tooltip title={item.title} arrow key={item.title}>
-                                <img
-                                    src={item.icon}
-                                    alt={item.title}
-                                    className={styles.technologies}
-                                />
-                            </Tooltip>
-                        );
-                    })}
-                </Grid>
-                <Grid item className={styles.description}>
-                    I believe in creating websites that are clean, simple, and
-                    easy to use.
-                </Grid>
-                <Grid item className={styles.description}>
-                    Feel free to check out more information about me.
-                </Grid>
-            </Grid>
-            <Grid
-                item
-                xs={12}
-                sm={12}
-                md={5}
                 container
                 direction="row"
-                justifyContent={{
-                    xs: "center",
-                    sm: "center",
-                    md: "flex-start",
-                }}
+                justifyContent="center"
                 alignItems="center"
-                className={styles.profile}
+                className={styles.content}
             >
-                <img
-                    src={ProfilePicture}
-                    alt="Profile"
-                    className={styles.profilePicture}
-                />
+                <Grid
+                    container
+                    item
+                    direction="column"
+                    justifyContent="center"
+                    alignItems={{ xs: "center", sm: "center", md: "flex-end" }}
+                    xs={12}
+                    sm={12}
+                    md={7}
+                    className={styles.messages}
+                >
+                    <Grid item className={styles.name}>
+                        <Typewriter
+                            onInit={(typewriter) => {
+                                typewriter
+                                    .pauseFor(800)
+                                    .typeString(`Hi, I'm Ivan`)
+                                    .pauseFor(1000)
+                                    .deleteChars(12)
+                                    .typeString("Engineer")
+                                    .pauseFor(500)
+                                    .deleteChars(8)
+                                    .typeString("Developer")
+                                    .pauseFor(500)
+                                    .deleteChars(9)
+                                    .typeString("Gamer")
+                                    .pauseFor(500)
+                                    .deleteChars(5)
+                                    .typeString(`Hi, I'm Ivan`)
+                                    .start();
+                            }}
+                        />
+                    </Grid>
+                    <Grid item className={styles.description}>
+                        I'm a full-stack web developer with skills and
+                        experience in the following tech stack:
+                    </Grid>
+                    <Grid item className={styles.description}>
+                        {listTechnologies.map((item) => {
+                            return (
+                                <Tooltip
+                                    title={item.title}
+                                    arrow
+                                    key={item.title}
+                                >
+                                    <img
+                                        src={item.icon}
+                                        alt={item.title}
+                                        className={styles.technologies}
+                                    />
+                                </Tooltip>
+                            );
+                        })}
+                    </Grid>
+                    <Grid item className={styles.description}>
+                        I believe in creating websites that are clean, simple,
+                        and easy to use.
+                    </Grid>
+                    <Grid item className={styles.description}>
+                        Feel free to check out more information about me.
+                    </Grid>
+                </Grid>
+                <Grid
+                    item
+                    xs={12}
+                    sm={12}
+                    md={5}
+                    container
+                    direction="row"
+                    justifyContent={{
+                        xs: "center",
+                        sm: "center",
+                        md: "flex-start",
+                    }}
+                    alignItems="center"
+                    className={styles.profile}
+                >
+                    <img
+                        src={ProfilePicture}
+                        alt="Profile"
+                        className={styles.profilePicture}
+                    />
+                </Grid>
             </Grid>
-        </Grid>
+        </div>
     );
 };
 
