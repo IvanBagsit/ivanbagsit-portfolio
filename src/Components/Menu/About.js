@@ -259,7 +259,7 @@ const About = () => {
                             ${
                                 DeviceChecker() === "desktop"
                                     ? styles.translateX
-                                    : styles.translateY
+                                    : styles.translatePhone
                             }
                             ${
                                 isCompanyVisible
