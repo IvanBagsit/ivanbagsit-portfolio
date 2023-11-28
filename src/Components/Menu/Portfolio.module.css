@@ -1,7 +1,6 @@
 .background {
     background-color: #0c192c;
     flex-grow: 1;
-    animation: backgroundChange 0.5s linear;
     overflow: hidden;
 }
 
@@ -31,15 +30,5 @@
 
     .technologies {
         height: 3vh;
-    }
-}
-
-@keyframes backgroundChange {
-    0% {
-        background-color: #ecf1f7;
-    }
-
-    100% {
-        background-color: #0c192c;
     }
 }
