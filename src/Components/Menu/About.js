@@ -200,7 +200,7 @@ const About = () => {
                 justifyContent="center"
                 alignItems="center"
                 style={{
-                    height: "100vh",
+                    height: "90vh",
                 }}
             >
                 <Parallax speed={20} style={{ width: "90vw" }}>
@@ -264,7 +264,7 @@ const About = () => {
                             src={novareLogo}
                             alt="novare"
                             className={`
-                            ${styles.company} 
+                            ${styles.company}
                             ${
                                 DeviceChecker() === "desktop"
                                     ? styles.translateX
