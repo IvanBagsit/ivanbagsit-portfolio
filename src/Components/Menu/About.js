@@ -12,8 +12,8 @@ import facebookIcon from "../../Images/contacts/facebookIcon.png";
 import instagramIcon from "../../Images/contacts/instagramIcon.png";
 import novareLogo from "../../Images/experience/novare.jpg";
 import latestCV from "../../Files/Latest CV.pdf";
-import astronaut from "../../Images/parallax/astronaut.png";
 import moon from "../../Images/parallax/moon.png";
+import astronaut from "../../Images/parallax/astronaut.png";
 
 const About = () => {
     const gmailCompose = {
@@ -103,6 +103,7 @@ const About = () => {
                 justifyContent="center"
                 alignItems="center"
                 className={styles.details}
+                style={{ zIndex: 2 }}
             >
                 <Grid
                     item
@@ -117,6 +118,7 @@ const About = () => {
                         sm: "center",
                         md: "flex-end",
                     }}
+                    style={{ zIndex: 2 }}
                 >
                     <Parallax speed={-180}>
                         <img
@@ -139,6 +141,7 @@ const About = () => {
                     xs={12}
                     sm={12}
                     md={6.5}
+                    style={{ zIndex: 1 }}
                 >
                     <Grid item className={styles.question}>
                         Who is this guy?
@@ -178,13 +181,12 @@ const About = () => {
                             );
                         })}
                     </Grid>
-                    <Grid item>
+                    <Grid item className={styles.downloadCV}>
                         <Button
                             variant="contained"
                             startIcon={<DownloadForOfflineIcon />}
                             onClick={handleDownload}
                             color="secondary"
-                            className={styles.downloadCV}
                         >
                             Download CV
                         </Button>
