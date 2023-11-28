@@ -10,7 +10,7 @@ import novareLogo from "../../Images/experience/novare.jpg";
 import latestCV from "../../Files/Latest CV.pdf";
 
 import DownloadForOfflineIcon from "@mui/icons-material/DownloadForOffline";
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import DeviceChecker from "../Config/DeviceChecker";
 
 const About = () => {
