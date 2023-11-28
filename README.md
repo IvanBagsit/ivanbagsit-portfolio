@@ -22,6 +22,7 @@ Tools/Library used:
 -   react-particles
 -   tsparticles
 -   typewriter-effect
+-   react-scroll-parallax
 
 Programming Languages used:
 

@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import styles from "./Appbar.module.css";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import DeviceChecker from "../Config/DeviceChecker";
 
 const Appbar = () => {
     const [isLocationAboutMe, setIsLocationAboutMe] = useState(false);
@@ -15,12 +14,9 @@ const Appbar = () => {
         fontFamily: "Blooming Elegant Sans Bold",
     };
 
-    const device = DeviceChecker();
-
     const appBarStyle = {
-        backgroundColor: `${
-            device === "phone" && isLocationAboutMe ? "#bffdd9" : "transparent"
-        }`,
+        // backgroundColor: `${isLocationAboutMe ? "#0c192c" : "transparent"}`,
+        backgroundColor: "transparent",
         transition: "background-color 0.5s linear",
         boxShadow: "none",
     };
@@ -42,9 +38,7 @@ const Appbar = () => {
                             <span
                                 className={styles.home}
                                 style={{
-                                    color: `${
-                                        isLocationAboutMe ? "black" : "#ffffff"
-                                    }`,
+                                    color: "#ffffff",
                                 }}
                             >
                                 IVAN BAGSIT
@@ -55,12 +49,8 @@ const Appbar = () => {
                         <Link to={"/home"}>
                             <Button
                                 style={{
-                                    borderRightColor: `${
-                                        isLocationAboutMe ? "black" : "#ffffff"
-                                    }`,
-                                    color: `${
-                                        isLocationAboutMe ? "black" : "#ffffff"
-                                    }`,
+                                    borderRightColor: "#ffffff",
+                                    color: "#ffffff",
                                 }}
                                 sx={buttonGroupStyle}
                             >
@@ -70,12 +60,8 @@ const Appbar = () => {
                         <Link to={"/about"}>
                             <Button
                                 style={{
-                                    borderRightColor: `${
-                                        isLocationAboutMe ? "black" : "#ffffff"
-                                    }`,
-                                    color: `${
-                                        isLocationAboutMe ? "black" : "#ffffff"
-                                    }`,
+                                    borderRightColor: "#ffffff",
+                                    color: "#ffffff",
                                 }}
                                 sx={buttonGroupStyle}
                             >
@@ -86,9 +72,7 @@ const Appbar = () => {
                             <Button
                                 sx={buttonGroupStyle}
                                 style={{
-                                    color: `${
-                                        isLocationAboutMe ? "black" : "#ffffff"
-                                    }`,
+                                    color: "#ffffff",
                                 }}
                             >
                                 Portfolio
