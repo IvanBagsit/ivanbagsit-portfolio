@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styles from "./Appbar.module.css";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+import DeviceChecker from "../Config/DeviceChecker";
 
 const Appbar = () => {
     const [isLocationAboutMe, setIsLocationAboutMe] = useState(false);
@@ -14,8 +15,12 @@ const Appbar = () => {
         fontFamily: "Blooming Elegant Sans Bold",
     };
 
+    const device = DeviceChecker();
+
     const appBarStyle = {
-        backgroundColor: "transparent",
+        backgroundColor: `${
+            device === "phone" && isLocationAboutMe ? "#bffdd9" : "transparent"
+        }`,
         transition: "background-color 0.5s linear",
         boxShadow: "none",
     };
