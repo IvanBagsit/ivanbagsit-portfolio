@@ -1,6 +1,9 @@
 import { Button, Grid, Tooltip } from "@mui/material";
+import DownloadForOfflineIcon from "@mui/icons-material/DownloadForOffline";
+import { useLayoutEffect, useRef, useState } from "react";
+import DeviceChecker from "../Config/DeviceChecker";
+
 import styles from "./About.module.css";
-import ProfilePicture from "../../Images/owner1.jpg";
 import gmailIcon from "../../Images/contacts/gmailIcon.png";
 import linkedinIcon from "../../Images/contacts/linkedinIcon.png";
 import githubIcon from "../../Images/contacts/githubIcon.png";
@@ -8,10 +11,7 @@ import facebookIcon from "../../Images/contacts/facebookIcon.png";
 import instagramIcon from "../../Images/contacts/instagramIcon.png";
 import novareLogo from "../../Images/experience/novare.jpg";
 import latestCV from "../../Files/Latest CV.pdf";
-
-import DownloadForOfflineIcon from "@mui/icons-material/DownloadForOffline";
-import { useLayoutEffect, useRef, useState } from "react";
-import DeviceChecker from "../Config/DeviceChecker";
+import astronaut from "../../Images/parallax/astronaut.png";
 
 const About = () => {
     const gmailCompose = {
@@ -117,10 +117,15 @@ const About = () => {
                     }}
                 >
                     <img
+                        src={astronaut}
+                        alt="astronaut"
+                        className={styles.profilePicture}
+                    />
+                    {/* <img
                         src={ProfilePicture}
                         alt="Profile"
                         className={styles.profilePicture}
-                    />
+                    /> */}
                 </Grid>
                 <Grid
                     item
