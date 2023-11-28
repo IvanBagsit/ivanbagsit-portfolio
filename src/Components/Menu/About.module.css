@@ -74,6 +74,10 @@
 }
 
 @media (max-width: 600px) {
+    .background {
+        padding-top: 10%;
+    }
+
     .details {
         height: 100vh;
     }
@@ -112,6 +116,10 @@
 }
 
 @media (min-width: 600px) {
+    .background {
+        padding-top: 3%;
+    }
+
     .company {
         margin-left: 5%;
     }

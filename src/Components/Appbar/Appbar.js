@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
 const Appbar = () => {
-    const [isLocationPortfolio, setIsLocationPortfolio] = useState(false);
+    const [isLocationAboutMe, setIsLocationAboutMe] = useState(false);
 
     const location = useLocation();
 
@@ -15,21 +15,22 @@ const Appbar = () => {
     };
 
     const appBarStyle = {
-        backgroundColor: isLocationPortfolio ? "#0c192c" : "#bffdd9",
+        backgroundColor: "transparent",
         transition: "background-color 0.5s linear",
+        boxShadow: "none",
     };
 
     useEffect(() => {
-        if (location.pathname === "/portfolio") {
-            setIsLocationPortfolio(true);
+        if (location.pathname === "/about") {
+            setIsLocationAboutMe(true);
         } else {
-            setIsLocationPortfolio(false);
+            setIsLocationAboutMe(false);
         }
     }, [location]);
 
     return (
         <Box>
-            <AppBar position="static" style={appBarStyle}>
+            <AppBar style={appBarStyle}>
                 <Toolbar sx={{ justifyContent: "space-between" }}>
                     <Link to={"/"}>
                         <Button variant="text">
@@ -37,9 +38,7 @@ const Appbar = () => {
                                 className={styles.home}
                                 style={{
                                     color: `${
-                                        isLocationPortfolio
-                                            ? "#ffffff"
-                                            : "#000000"
+                                        isLocationAboutMe ? "black" : "#ffffff"
                                     }`,
                                 }}
                             >
@@ -52,14 +51,10 @@ const Appbar = () => {
                             <Button
                                 style={{
                                     borderRightColor: `${
-                                        isLocationPortfolio
-                                            ? "#ffffff"
-                                            : "#000000"
+                                        isLocationAboutMe ? "black" : "#ffffff"
                                     }`,
                                     color: `${
-                                        isLocationPortfolio
-                                            ? "#ffffff"
-                                            : "#000000"
+                                        isLocationAboutMe ? "black" : "#ffffff"
                                     }`,
                                 }}
                                 sx={buttonGroupStyle}
@@ -71,14 +66,10 @@ const Appbar = () => {
                             <Button
                                 style={{
                                     borderRightColor: `${
-                                        isLocationPortfolio
-                                            ? "#ffffff"
-                                            : "#000000"
+                                        isLocationAboutMe ? "black" : "#ffffff"
                                     }`,
                                     color: `${
-                                        isLocationPortfolio
-                                            ? "#ffffff"
-                                            : "#000000"
+                                        isLocationAboutMe ? "black" : "#ffffff"
                                     }`,
                                 }}
                                 sx={buttonGroupStyle}
@@ -91,9 +82,7 @@ const Appbar = () => {
                                 sx={buttonGroupStyle}
                                 style={{
                                     color: `${
-                                        isLocationPortfolio
-                                            ? "#ffffff"
-                                            : "#000000"
+                                        isLocationAboutMe ? "black" : "#ffffff"
                                     }`,
                                 }}
                             >
