@@ -4,12 +4,22 @@
     color: white;
 }
 
-.profilePicture{
+.details {
+    z-index: 1;
+}
+
+.astronaut{
     width: auto;
-    height: 60vh;
-    border-radius: 20%;
-    object-fit: cover;
-    animation: shadow 4s linear infinite;
+    animation: astro 4s linear infinite;
+    z-index: 2;
+}
+
+.moon {
+    height: 70vh;
+    width: auto;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.7;
 }
 
 .question {
@@ -17,14 +27,22 @@
     font-weight: bolder;
     font-size: 50px;
     padding-bottom: 1%;
+    z-index: 1;
 }
 
 .informations {
     width: 80vh;
+    z-index: 1;
 }
 
 .contact {
     padding-top: 3%;
+    z-index: 1;
+}
+
+.downloadCV {
+    margin-top: 5%;
+    z-index: 1;
 }
 
 .contactIcons:hover {
@@ -35,6 +53,11 @@
 
 .contactIcons {
     animation: bounce 1s linear;
+    z-index: 1;
+}
+
+.contactIconsGroup {
+    z-index: 1;
 }
 
 .experience {
@@ -43,6 +66,7 @@
     font-size: 50px;
     padding: 0 0 3% 0;
     text-align: center;
+    z-index: 2;
 }
 
 .company {
@@ -51,6 +75,7 @@
     border: 1px solid black;
     border-radius: 10%;
     object-fit: cover;
+    z-index: 2;
 }
 
 .companyAnimationX {
@@ -72,6 +97,11 @@
 .workDescription {
     padding-top: 3%;
     width: 80vh;
+    z-index: 2;
+}
+
+.workTitle {
+    z-index: 2;
 }
 
 @media (max-width: 600px) {
@@ -83,9 +113,14 @@
         height: 100vh;
     }
 
-    .profilePicture {
+    .astronaut {
+        margin-top: -60%;
         height: 45vh;
-        margin-bottom: -10%;
+    }
+
+    .moon {
+        height: 80vw;
+        width: auto;
     }
 
     .question {
@@ -108,7 +143,6 @@
     .workDescription {
         text-align: center;
         width: 90vw;
-        border: '1px solid red';
     }
 
     .workDescription {
@@ -117,19 +151,17 @@
 }
 
 @media (min-width: 600px) {
-    .background {
-        padding-top: 3%;
-    }
 
     .company {
         margin-left: 5%;
     }
 
     .details {
-        height: 90vh;
+        height: 100vh;
     }
     
-    .profilePicture {
+    .astronaut {
+        height: 60vh;
         margin-right: 5%;
     }
 }
@@ -158,17 +190,17 @@
     }
 }
 
-@keyframes shadow {
+@keyframes astro {
     0% {
-        box-shadow: 0 0 1vh #0c192c;
+        transform: rotate(10deg);
     }
 
     50% {
-        box-shadow: 0 0 4vh #0c192c;
+        transform: rotate(-10deg);
     }
 
     100% {
-        box-shadow: 0 0 1vh #0c192c;
+        transform: rotate(10deg);
     }
 }
 

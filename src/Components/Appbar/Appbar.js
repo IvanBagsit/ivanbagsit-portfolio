@@ -15,7 +15,8 @@ const Appbar = () => {
     };
 
     const appBarStyle = {
-        backgroundColor: `${isLocationAboutMe ? "#0c192c" : "transparent"}`,
+        // backgroundColor: `${isLocationAboutMe ? "#0c192c" : "transparent"}`,
+        backgroundColor: "transparent",
         transition: "background-color 0.5s linear",
         boxShadow: "none",
     };
