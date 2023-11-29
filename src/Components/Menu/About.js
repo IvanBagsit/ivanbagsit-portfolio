@@ -3,7 +3,11 @@ import DownloadForOfflineIcon from "@mui/icons-material/DownloadForOffline";
 import { useLayoutEffect, useRef, useState } from "react";
 import DeviceChecker from "../Config/DeviceChecker";
 import { Parallax } from "react-scroll-parallax";
+import { useCallback } from "react";
+import Particles from "react-particles";
+import { loadSlim } from "tsparticles-slim";
 
+import particleAboutConfig from "../Config/ParticleAbout.json";
 import styles from "./About.module.css";
 import gmailIcon from "../../Images/contacts/gmailIcon.png";
 import linkedinIcon from "../../Images/contacts/linkedinIcon.png";
@@ -88,6 +92,15 @@ const About = () => {
         return () => window.removeEventListener("scroll", onScroll);
     });
 
+    const particlesInit = useCallback(async (engine) => {
+        console.log(engine);
+        await loadSlim(engine);
+    }, []);
+
+    const particlesLoaded = useCallback(async (container) => {
+        await console.log(container);
+    }, []);
+
     return (
         <Grid
             container
@@ -96,6 +109,13 @@ const About = () => {
             alignItems="center"
             className={styles.background}
         >
+            <Particles
+                id="tsparticles"
+                init={particlesInit}
+                loaded={particlesLoaded}
+                options={particleAboutConfig}
+                style={{ zIndex: 0 }}
+            />
             <Grid
                 item
                 container
