@@ -112,7 +112,7 @@ const Portfolio = () => {
         <Grid
             container
             direction="row"
-            justifyContent="space-around"
+            justifyContent="space-evenly"
             alignItems="center"
             className={styles.background}
         >
