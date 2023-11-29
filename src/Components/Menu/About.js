@@ -114,7 +114,7 @@ const About = () => {
                 init={particlesInit}
                 loaded={particlesLoaded}
                 options={particleAboutConfig}
-                style={{ zIndex: 0 }}
+                className={styles.particles}
             />
             <Grid
                 item
