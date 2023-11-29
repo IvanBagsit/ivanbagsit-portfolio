@@ -4,6 +4,12 @@
     color: white;
 }
 
+.particles {
+    position: absolute;
+    display: flex;
+    z-index: 0;
+}
+
 .astronaut{
     width: auto;
     animation: astro 4s linear infinite;
