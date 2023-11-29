@@ -25,7 +25,7 @@ import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
 
-import particleConfig from "../Config/Particle.json";
+import particlePortfolioConfig from "../Config/Particle.json";
 
 const Portfolio = () => {
     const sneakersRepublicTech = [
@@ -112,7 +112,7 @@ const Portfolio = () => {
         <Grid
             container
             direction="row"
-            justifyContent="space-around"
+            justifyContent="space-evenly"
             alignItems="center"
             className={styles.background}
         >
@@ -120,7 +120,7 @@ const Portfolio = () => {
                 id="tsparticles"
                 init={particlesInit}
                 loaded={particlesLoaded}
-                options={particleConfig}
+                options={particlePortfolioConfig}
                 className={styles.particles}
             />
 
