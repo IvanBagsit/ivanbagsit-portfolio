@@ -15,7 +15,7 @@
             "direction": "none",
             "enable": true,
             "random": true,
-            "speed": 0.1,
+            "speed": 0.2,
             "straight": false
         },
         "number": {
