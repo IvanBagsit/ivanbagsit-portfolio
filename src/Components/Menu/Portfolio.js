@@ -84,10 +84,10 @@ const Portfolio = () => {
 
     const cardList = [
         {
-            name: "Sneakers Republic (Ongoing)",
+            name: "Sneakers Republic",
             image: sneakersRepublic,
             link: "https://sneakers-republic.vercel.app/",
-            title: "Sneakers Republic (Ongoing)",
+            title: "Sneakers Republic",
             techStack: sneakersRepublicTech,
         },
         {
