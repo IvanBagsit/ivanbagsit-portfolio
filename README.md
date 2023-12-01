@@ -2,7 +2,7 @@
 
 ## Welcome! 👋
 
-Thanks for checking out my personal portfolio. This is currently hosted by Vercel.
+Thanks for checking out my personal portfolio. This is currently hosted by Vercel and mobile responsive also
 
 [Visit the actual project here](https://ivanbagsit-portfolio.vercel.app/)
 
