@@ -7,8 +7,6 @@
     position: absolute;
     border: 5px solid #4fc3dc;
     border-radius: 50%;
-    width: 50vh;
-    height: 50vh;
     animation: rotate 4s linear infinite;
 }
 
@@ -19,5 +17,19 @@
 
     100% {
         transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+@media (max-width: 600px) {
+    .circle {
+        width: 35vh;
+        height: 35vh;
+    }
+}
+
+@media (min-width: 600px) {
+    .circle {
+        width: 50vh;
+        height: 50vh;
     }
 }
