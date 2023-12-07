@@ -12,6 +12,7 @@ import springbootIcon from "../../Images/logo/springbootIcon.png";
 import materialuiIcon from "../../Images/logo/materialuiIcon.png";
 import mySQLIcon from "../../Images/logo/mysqlIcon.png";
 import expressIcon from "../../Images/logo/expressIcon.png";
+import mongodbIcon from "../../Images/logo/mongodbIcon.png";
 
 import Typewriter from "typewriter-effect";
 
@@ -48,6 +49,10 @@ const Home = () => {
         {
             title: "ExpressJS",
             icon: expressIcon,
+        },
+        {
+            title: "MongoDB Atlas",
+            icon: mongodbIcon,
         },
         {
             title: "Java",
