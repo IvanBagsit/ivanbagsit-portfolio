@@ -21,6 +21,7 @@ import springbootIcon from "../../Images/logo/springbootIcon.png";
 import materialuiIcon from "../../Images/logo/materialuiIcon.png";
 import mySQLIcon from "../../Images/logo/mysqlIcon.png";
 import expressIcon from "../../Images/logo/expressIcon.png";
+import mongodbIcon from "../../Images/logo/mongodbIcon.png";
 
 import { useCallback } from "react";
 import Particles from "react-particles";
@@ -53,6 +54,10 @@ const Portfolio = () => {
         {
             title: "ExpressJS",
             icon: expressIcon,
+        },
+        {
+            title: "MongoDB Atlas",
+            icon: mongodbIcon,
         },
     ];
 
