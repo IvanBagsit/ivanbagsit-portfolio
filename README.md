@@ -14,6 +14,8 @@ Thanks for checking out my personal portfolio. This is currently hosted by Verce
 
 ## Information <a name="information">
 
+Node Version: v14.21.3
+
 Tools/Library used:
 
 -   React
