@@ -15,7 +15,7 @@ import githubIcon from "../../Images/contacts/githubIcon.png";
 import facebookIcon from "../../Images/contacts/facebookIcon.png";
 import instagramIcon from "../../Images/contacts/instagramIcon.png";
 import novareLogo from "../../Images/experience/novare.jpg";
-import latestCV from "../../Files/Ivan Bagsit CV.pdf";
+import latestCV from "../../Files/Ivan Bagsit - CV.pdf";
 import moon from "../../Images/parallax/moon.png";
 import astronaut from "../../Images/parallax/astronaut.png";
 
