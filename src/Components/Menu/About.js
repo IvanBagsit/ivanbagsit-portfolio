@@ -10,8 +10,8 @@ import { loadSlim } from "tsparticles-slim";
 import particleAboutConfig from "../Config/ParticleAbout.json";
 import styles from "./About.module.css";
 import gmailIcon from "../../Images/contacts/gmailIcon.png";
+import githubIcon from '../../Images/contacts/githubIcon2.png'
 import linkedinIcon from "../../Images/contacts/linkedinIcon.png";
-import githubIcon from "../../Images/contacts/githubIcon.png";
 import facebookIcon from "../../Images/contacts/facebookIcon.png";
 import instagramIcon from "../../Images/contacts/instagramIcon.png";
 import novareLogo from "../../Images/experience/novare.jpg";
