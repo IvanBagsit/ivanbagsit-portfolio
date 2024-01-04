@@ -144,7 +144,58 @@
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    .background {
+        padding-top: 10%;
+    }
+
+    .details {
+        height: 100vh;
+        font-size: x-large;
+    }
+
+    .astronaut {
+        margin-top: -70%;
+        height: auto;
+        width: 60vw;
+    }
+
+    .moon {
+        height: 70vw;
+        width: auto;
+    }
+
+    .question {
+        text-align: center;
+        width: 90vw;
+        padding-bottom: 3%;
+    }
+
+    .informations {
+        text-align: center;
+        width: 90vw;
+        padding-bottom: 3%;
+    }
+
+    .company {
+        width: 50vw;
+    }
+
+    .workTitle,
+    .workDescription {
+        text-align: center;
+        width: 90vw;
+        font-size: x-large;
+    }
+
+    .workDescription {
+        padding-bottom: 8%;
+    }
+    
+}
+
+@media (min-width: 992px) {
 
     .company {
         margin-left: 5%;
