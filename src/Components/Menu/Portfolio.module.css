@@ -23,12 +23,30 @@
     font-size: 16px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
     .cardImage {
         width: 80vw;
     }
 
+    .details {
+        font-size: large;
+    }
+
     .technologies {
-        height: 3vh;
+        height: 8vw;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .cardImage {
+        width: 60vw;
+    }
+
+    .technologies {
+        height: 5.5vw;
+    }
+
+    .details {
+        font-size: x-large;
     }
 }
