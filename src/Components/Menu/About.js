@@ -280,10 +280,6 @@ const About = () => {
                                     Collaborated with different teams to meet client’s demand and deadline
                                 </li>
                             </ul>
-                            {/* Full Stack web developer, I was tasked to
-                            develop/enhance certain features using different
-                            tech stack and collaborated with different teams
-                            based on client's demand and deadline. */}
                         </Grid>
                     </Grid>
                     <Grid
