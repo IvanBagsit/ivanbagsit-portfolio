@@ -257,13 +257,33 @@ const About = () => {
                             Software Engineer
                         </Grid>
                         <Grid item className={styles.workTitle}>
-                            March 2022-Present
+                            March 2022-January 2024
                         </Grid>
                         <Grid item className={styles.workDescription}>
-                            As a software engineer, I was tasked to
+                            <ul>
+                                <li>
+                                    Full Stack Web Developer
+                                </li>
+                                <li>
+                                    Optimized SQL queries to enhance client-side loading time
+                                </li>
+                                <li>
+                                    Added pagination feature to optimize display of data in a table
+                                </li>
+                                <li>
+                                    Created a cron job feature that removes old data in the database every 15th and 30th day of the month
+                                </li>
+                                <li>
+                                    Created a form modal for users to void a transaction
+                                </li>
+                                <li>
+                                    Collaborated with different teams to meet client’s demand and deadline
+                                </li>
+                            </ul>
+                            {/* Full Stack web developer, I was tasked to
                             develop/enhance certain features using different
                             tech stack and collaborated with different teams
-                            based on client's demand and deadline.
+                            based on client's demand and deadline. */}
                         </Grid>
                     </Grid>
                     <Grid
