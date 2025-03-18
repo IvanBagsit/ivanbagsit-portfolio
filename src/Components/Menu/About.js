@@ -15,6 +15,7 @@ import linkedinIcon from "../../Images/contacts/linkedinIcon.png";
 import facebookIcon from "../../Images/contacts/facebookIcon.png";
 import instagramIcon from "../../Images/contacts/instagramIcon.png";
 import novareLogo from "../../Images/experience/novare.jpg";
+import samsungLogo from "../../Images/experience/samsung.jpg";
 import latestCV from "../../Files/Ivan Bagsit - CV.pdf";
 import moon from "../../Images/parallax/moon.png";
 import astronaut from "../../Images/parallax/astronaut.png";
@@ -220,7 +221,7 @@ const About = () => {
                 justifyContent="center"
                 alignItems="center"
                 style={{
-                    height: "90vh",
+                    height: "140vh",
                 }}
             >
                 <Parallax speed={20} style={{ width: "90vw" }}>
@@ -228,6 +229,97 @@ const About = () => {
                 </Parallax>
                 <Grid item className={styles.experience}>
                     Work Experience
+                </Grid>
+                <Grid
+                    item
+                    container
+                    direction="row"
+                    justifyContent="center"
+                    alignItems="center"
+                    style={{marginBottom: '10vh'}}
+                >
+                    <Grid
+                        item
+                        container
+                        direction="column"
+                        justifyContent="center"
+                        alignItems={{
+                            xs: "center",
+                            sm: "center",
+                            md: "flex-end",
+                        }}
+                        xs={12}
+                        sm={12}
+                        md={7}
+                    >
+                        <Grid item className={styles.workTitle}>
+                            <b>Samsung R&D Philippines</b>
+                        </Grid>
+                        <Grid item className={styles.workTitle}>
+                            Software Engineer II
+                        </Grid>
+                        <Grid item className={styles.workTitle}>
+                            March 2024-May 2025
+                        </Grid>
+                        <Grid item className={styles.workDescription}>
+                            <ul>
+                                <li>
+                                    Backend Developer
+                                </li>
+                                <li>
+                                    Worked on Machine Learning Platform for training AI Models
+                                </li>
+                                <li>
+                                    Developed cron job feature for removing unutilized Models and Artifacts
+                                </li>
+                                <li>
+                                    Introduced limits for logging metadata in a ML Training
+                                </li>
+                                <li>
+                                    Developed and enhanced database migration script from 20hrs to 7mins
+                                </li>
+                                <li>
+                                    Integrated MLFlow to in-house tracking library
+                                </li>
+                            </ul>
+                        </Grid>
+                    </Grid>
+                    <Grid
+                        item
+                        container
+                        direction="column"
+                        justifyContent="center"
+                        alignItems={{
+                            xs: "center",
+                            sm: "center",
+                            md: "flex-start",
+                        }}
+                        xs={12}
+                        sm={12}
+                        md={5}
+                    >
+                        <img
+                            src={samsungLogo}
+                            alt="samsung"
+                            className={`
+                            ${styles.company}
+                            ${
+                                DeviceChecker() === "desktop"
+                                    ? styles.translateX
+                                    : styles.translatePhone
+                            }
+                            ${
+                                isCompanyVisible
+                                    ? `${
+                                          DeviceChecker() === "desktop"
+                                              ? styles.companyAnimationX
+                                              : styles.companyAnimationY
+                                      }`
+                                    : ""
+                            }`}
+                            ref={logoRef}
+                        />
+                    </Grid>
                 </Grid>
                 <Grid
                     item
